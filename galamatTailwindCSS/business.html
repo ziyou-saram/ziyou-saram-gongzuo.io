@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Links-->
+    <!--TailwindCSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--DaisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Flowbite-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Navbar-->
+    <section>
+        <nav x-data="{ isOpen: false }" class="bg-white">
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="md:flex md:items-center md:gap-12">
+                        <a class="block text-teal-600" href="./index.html">
+                            <span class="sr-only">Home</span>
+                            <img class="w-24" src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <nav aria-label="Global">
+                            <ul class="flex items-center gap-6 text-sm">
+                                <li>
+                                    <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Проекты </a>
+                                </li>
+
+                                <li>
+                                    <a class="text-gray-500 transition hover:text-gray-500/75" href="./business.html"> Коммерция </a>
+                                </li>
+
+                                <li>
+                                    <a class="text-gray-500 transition hover:text-gray-500/75" href="./about_us.html"> О Нас </a>
+                                </li>
+
+                                <li>
+                                    <a class="text-gray-500 transition hover:text-gray-500/75" href="./blog.html"> Блог </a>
+                                </li>
+
+                                <li>
+                                    <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Контакты </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="sm:flex sm:gap-4">
+                            <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                                href="/">
+                                +7 (747) 120-57-53
+                            </a>
+
+                            <div class="hidden sm:flex">
+                                <a class="flex-row space-x-4 rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                                    href="/">
+                                    KAZ/RUS
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="block md:hidden">
+                            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Navbar-->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./img/logo.png" class="h-8" alt="Flowbite Logo" />
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+                    started</button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col font-regular p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <a href="./projects.html"
+                        class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="./business.html"
+                            class="block text-sm py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500">Коммерция</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html"
+                            class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                            aria-current="page">О Нас</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html"
+                            class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Блог</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero-->
+    <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="grid col-span-1 lg:col-span-6 gap-8">
+                <div class="grid col-span-1 lg:col-span-6">
+                    <div class="h-auto rounded-xl w-full">
+                        <div class="card lg:card-side bg-[#F2F5FA]">
+                            <div class="card-body w-full lg:w-1/2 space-4">
+                              <h2 class="card-title text-3xl">Возникли <br> пробелмы?</h2>
+                              <p class="pt-4">consectetur at, ullamcorper tempor amet, Vestibulum Lorem odio quis tincidunt eu eu Donec convallis. vel elit. ex. faucibus </p>
+                              <div class="card-actions justify-start">
+                                <button class="px-6 py-3 rounded-full bg-[#1D2C49] text-[#F2F5FA] text-sm">Получить консультацию</button>
+                              </div>
+                            </div>
+
+                            <div class="w-1/2 p-8 hidden lg:block">
+                                <figure class="aspect-square rounded-lg"><img class="h-full w-full object-cover object-center" src="./img/cta.png" alt="Album"/></figure>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="grid col-span-1 lg:col-span-3">
+                    <div
+                        class="max-w-auto p-6 bg-[#1D2C49] rounded-xl">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#F2F5FA] dark:text-white">Клиенты</h5>
+                        </a>
+                        <p class="mb-16 font-normal text-[#8C94A8] dark:text-gray-400">consectetur at, ullamcorper tempor amet, Vestibulum Lorem odio quis tincidunt eu eu Donec convallis. vel elit. ex. faucibus </p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#1D2C49] bg-[#F2F5FA] rounded-full">
+                            Посмотреть
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid col-span-1 lg:col-span-3">
+                    <div
+                        class="max-w-auto p-6 bg-[#1D2C49] rounded-xl">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#F2F5FA] dark:text-white">Клиенты</h5>
+                        </a>
+                        <p class="mb-16 font-normal text-[#8C94A8] dark:text-gray-400">consectetur at, ullamcorper tempor amet, Vestibulum Lorem odio quis tincidunt eu eu Donec convallis. vel elit. ex. faucibus </p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#1D2C49] bg-[#F2F5FA] rounded-full">
+                            Посмотреть
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid col-span-1 lg:col-span-6 h-full">
+                <figure
+                    class="relative max-w-full h-full">
+                    <div class="h-full">
+                        <img class="rounded-lg h-full"
+                            src="./img/business_banner.png"
+                            alt="image description">
+                    </div>
+                    <figcaption class="absolute px-4 text-5xl max-w-md text-white bottom-6">
+                        <p>Идеальные помещения для вашего бизнеса ждут вас!</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--Features-->
+    <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="grid col-span-1 lg:col-span-6">
+
+                <div
+                    class="block max-w-full p-6 pr-28 pb-28 bg-[#F2F5FA] rounded-lg">
+                    <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Разнообразие выбора</h5>
+                    <p class="text-4xl font-semibold text-gray-700 dark:text-gray-400">От небольших офисных помещений до больших торговых площадей</p>
+            </div>
+            </div>
+            <div class="grid col-span-1 lg:col-span-6">
+
+                <div
+                    class="block max-w-full p-6 pr-28 pb-28 bg-[#F2F5FA] rounded-lg">
+                    <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Разнообразие выбора</h5>
+                    <p class="text-4xl font-semibold text-gray-700 dark:text-gray-400">От небольших офисных помещений до больших торговых площадей</p>
+            </div>
+            </div>
+            <div class="grid col-span-1 lg:col-span-6">
+
+                <div
+                    class="block max-w-full p-6 pr-28 pb-28 bg-[#F2F5FA] rounded-lg">
+                    <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Разнообразие выбора</h5>
+                    <p class="text-4xl font-semibold text-gray-700 dark:text-gray-400">От небольших офисных помещений до больших торговых площадей</p>
+            </div>
+            </div>
+            <div class="grid col-span-1 lg:col-span-6">
+
+                <div
+                    class="block max-w-full p-6 pr-28 pb-28 bg-[#F2F5FA] rounded-lg">
+                    <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Разнообразие выбора</h5>
+                    <p class="text-4xl font-semibold text-gray-700 dark:text-gray-400">От небольших офисных помещений до больших торговых площадей</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CTA-->
+    <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
+        <div class="relative rounded-xl lg:items-stretch bg-[#1D2C49] flex flex-wrap lg:items-center">
+            <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/3 lg:p-8">
+                <div class=" max-w-xs text-left">
+                    <h1 class="text-2xl text-[#F2F5FA] font-bold sm:text-3xl">Есть вопросы?</h1>
+
+                    <p class="mt-4 text-[#8C94A8] w-full lg:max-w-xs">
+                        Заполните форму для обратной связи и наши сотрудники с вами свяжутся
+                    </p>
+                </div>
+
+                <form action="" class=" mb-0 mt-8 w-full lg:max-w-xs space-y-4">
+                    <div>
+                        <label for="base-input"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Base input</label>
+                        <input type="text" id="base-input"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="base-input"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Base input</label>
+                        <input type="text" id="base-input"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your
+                            country</label>
+                        <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-10">
+
+                        <button type="submit"
+                            class="inline-block w-full rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white">
+                            Отправить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="relative rouned rounded-lg w-full lg:w-2/3">
+                <img alt="Welcome" src="./img/cta.png"
+                    class="absolute rouned rounded-lg p-8 h-full w-full object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <!--Contacts-->
+    <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
+        <div class="">
+            <div>
+                <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Контакты</h1>
+            </div>
+    
+            <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
+                    <div class="bg-[#F2F5FA] pt-8 pl-8 pb-16 space-y-5 rounded-xl">
+                        <h2 class="text-lg font-semibold text-[#2A2A30] dark:text-white">Call-center</h2>
+                        <p class="text-xl font-semibold text-[#2A2A30] dark:text-gray-400">+7 747 120 5753</p>
+                    </div>
+    
+                    <div class="bg-[#F2F5FA] pt-8 pl-8 pb-16 space-y-5 rounded-xl">
+                        <h2 class="text-lg font-semibold text-[#2A2A30] dark:text-white">Адрес</h2>
+                        <p class="text-xl font-semibold text-[#2A2A30] dark:text-gray-400">пр.Кабанбай батыра, 51 <br> ЖК Galamat Towers, НП-10</p>
+                    </div>
+    
+                    <div class="bg-[#F2F5FA] pt-8 pl-8 pb-16 space-y-5 rounded-xl">
+                        <h2 class="text-lg font-semibold text-[#2A2A30] dark:text-white">Социальные сети</h2>
+                        <p class="text-xl font-semibold text-[#2A2A30] dark:text-gray-400">Our friendly team is here to help.</p>
+                    </div>
+                </div>
+    
+                <div class="overflow-hidden rounded-xl lg:col-span-2 h-96 lg:h-auto">
+                    <iframe width="100%" height="100%" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.4954531288085!2d71.40230497640427!3d51.099318340433214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245851f57c6607b%3A0x86947baea78b003a!2z0JbQmiBHYWxhbWF0IHRvd2Vycw!5e0!3m2!1sru!2skz!4v1702935751596!5m2!1sru!2skz"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Flowbite-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+</html>
