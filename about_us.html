@@ -20,14 +20,23 @@
 <body>
     <!--Navbar-->
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./img/logo.png" class="h-8" alt="Flowbite Logo" />
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-                    started</button>
+                <div class="flex flex-row space-x-4">
+                    <button type="button"
+                        class="hidden lg:block text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        +7 (747) 120-57-53
+                    </button>
+
+                    <button type="button"
+                        class="hidden lg:block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        KAZ/RUS
+                    </button>
+                </div>
+
                 <button data-collapse-toggle="navbar-cta" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-cta" aria-expanded="false">
@@ -41,26 +50,41 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                 <ul
-                    class="flex flex-col font-regular p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <a href="./projects.html"
-                        class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Проекты</a>
+                    class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="./projects.html"
+                            class="block text-sm font-regular py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Проекты</a>
                     </li>
                     <li>
                         <a href="./business.html"
-                            class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Коммерция</a>
+                            class="block text-sm font-regular py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Коммерция</a>
                     </li>
                     <li>
                         <a href="./about_us.html"
-                            class="block text-sm py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                            aria-current="page">О Нас</a>
+                            class="block text-sm font-regular py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">О
+                            Нас</a>
                     </li>
                     <li>
                         <a href="./blog.html"
-                            class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Блог</a>
+                            class="block text-sm font-regular py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Блог</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block text-sm py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Контакты</a>
+                        <a href="./"
+                            class="block text-sm font-regular py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Контакты</a>
+                    </li>
+
+                    <li>
+                        <button type="button"
+                            class="block lg:hidden text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            +7 (747) 120-57-53
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button"
+                            class="block lg:hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            KAZ/RUS
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -399,73 +423,72 @@
         </div>
     </section>
 
-    <!--YouTube Videos-->
+     <!--YouTube Videos-->
     <!--Desktop-->
-    <section class="hidden lg:block mx-auto max-w-screen-2xl h-[600px] px-4 sm:px-6 lg:px-8 space-y-8 py-20">
+    <section class="mx-auto max-w-screen-2xl  px-4 sm:px-6 lg:px-8 space-y-8 py-20 hidden lg:block">
         <div class="space-y-4">
-            <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">YouTube видео</h1>
-            <p class="mt-2 text-lg font-semibold text-gray-800 md:text-lg max-w-screen-sm">placerat. at, ac placerat
-                quis efficitur. non. facilisis sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel
-                tempor dui sodales. dolor non .</p>
+            <h1 class="text-2xl font-semibold text-[#1D2C49] md:text-4xl">YouTube видео</h1>
+            <p class="text-sm font-medium text-[#8C94A8] md:text-sm max-w-screen-sm">placerat. at, ac placerat quis efficitur. non. facilisis sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel tempor dui sodales. dolor non .</p>
         </div>
-        <div class="rounded-xl carousel h-full w-full">
-            <div id="slide5" class="rounded-xl carousel-item relative w-full">
-                <div class="rounded-xl w-full h-full aspect-video">
-                    <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+        <div id="animation-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative overflow-hidden rounded-lg h-[600px]">
+                 <!-- Item 1 -->
+                  <div class="rounded-xl w-full h-full aspect-video hidden duration-200 ease-linear" controls data-carousel-item>
+                    <iframe
+                      class="w-full h-full rounded-xl"
+                      src="https://www.youtube.com/embed/FF3fuYLnApQ"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
                     </iframe>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide8" class="btn btn-circle">❮</a>
-                    <a href="#slide6" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide6" class="carousel-item relative w-full">
-                <div class="w-full h-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/FF3fuYLnApQ" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                  </div>
+                <!-- Item 2 -->
+                <div class="rounded-xl w-full h-full aspect-video hidden duration-200 ease-linear" controls data-carousel-item>
+                    <iframe
+                      class="w-full h-full rounded-xl"
+                      src="https://www.youtube.com/embed/FF3fuYLnApQ"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
                     </iframe>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide7" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide7" class="carousel-item relative w-full">
-                <div class="w-full h-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/FF3fuYLnApQ" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                  </div>
+                <!-- Item 3 -->
+                <div class="rounded-xl w-full h-full aspect-video hidden duration-200 ease-linear" controls data-carousel-item>
+                    <iframe
+                      class="w-full h-full rounded-xl"
+                      src="https://www.youtube.com/embed/FF3fuYLnApQ"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
                     </iframe>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide6" class="btn btn-circle">❮</a>
-                    <a href="#slide8" class="btn btn-circle">❯</a>
-                </div>
+                  </div>
             </div>
-            <div id="slide8" class="carousel-item relative w-full">
-                <div class="w-full h-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/FF3fuYLnApQ" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide7" class="btn btn-circle">❮</a>
-                    <a href="#slide5" class="btn btn-circle">❯</a>
-                </div>
-            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
     </section>
 
     <!--Mobile-->
-    <section class="block lg:hidden w-screen px-4">
+    <section class="block lg:hidden w-screen px-4 space-y-8 py-20">
         <div class="space-y-4">
-            <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">YouTube видео</h1>
-            <p class="mt-2 text-lg font-semibold text-gray-800 md:text-lg max-w-screen-sm">placerat. at, ac placerat
+            <h1 class="text-3xl font-semibold text-[#1D2C49]">YouTube видео</h1>
+            <p class="text-base font-medium text-[#8C94A8] max-w-screen-sm">placerat. at, ac placerat
                 quis efficitur. non. facilisis sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel
                 tempor dui sodales. dolor non .</p>
         </div>
