@@ -15,6 +15,9 @@
 
     <!--Flowbite-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -91,122 +94,83 @@
         </div>
     </nav>
 
-    <!--Header-->
-    <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 grid-rows-2 lg:grid-rows-1">
-            <div class="grid grid-cols-1 space-y-8 lg:space-y-8">
-                <div class="rounded-lg p-8 pb-0">
-                    <div>
-                        <h1 class="text-3xl font-semibold text-gray-800 md:text-3xl dark:text-white">О компании</h1>
-
-                        <p class="pt-3 w-96 text-gray-500 dark:text-gray-400">facilisis elit commodo luctus amet,
-                            malesuada at, felis, elit non sit est. dolor Cras Donec tincidunt Nunc consectetur eget vel
-                            quis fringilla placerat. Lorem </p>
-
-                        <p class="pt-3 w-96 text-gray-500 dark:text-gray-400">facilisis elit commodo luctus amet,
-                            malesuada at, felis, elit non sit est. dolor Cras Donec tincidunt Nunc consectetur eget vel
-                            quis fringilla placerat. Lorem </p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card lg:card-side bg-[#1D2C49] shadow-xl">
-                        <div class="card-body lg:w-1/2">
-                          <h2 class="card-title text-3xl text-[#F2F5FA]">Брошюра</h2>
-                          <p class="text-sm text-[#F2F5FA]">odio In sollicitudin. elit. nec sodales. non. sollicitudin. at risus Quisque risus eget tempor hendrerit tincidunt libero, dignissim, sodales. orci quis ex ac </p>
-                          <div class="card-actions justify-start pt-20">
-                            <button class="btn text-sm text-[#1D2C49] bg-[#F2F5FA] rounded-full w-full">Скачать брошюру</button>
-                          </div>
-                        </div>
-                        <figure class="p-4 hidden lg:block"><img class="hidden lg:block rounded-lg" src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure>
-                      </div>
-                </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-12 grid-rows-3 lg:grid-rows-6 gap-4">
+            <!-- Карточка 1 -->
+            <div class="col-span-12 md:col-span-6 row-span-3 p-8 bg-white rounded-xl ">
+                <h2 class="text-lg font-bold mb-4">О компании</h2>
+                <p class="mb-4">facilisis elit commodo luctus amet, malesuada at, felis, elit non sit est. dolor Cras Donec tincidunt Nunc consectetur eget vel quis fringilla placerat. Lorem</p>
+                <p>felis, venenatis sit sodales. urna nisi dui. scelerisque vitae Nullam tortor. viverra lacus, non vitae ex. ipsum hendrerit amet, elit quis ex malesuada orci.</p>
             </div>
-
-            <div class="hidden lg:block">
-                <div class="h-full justify-stretch rounded-lg bg-gray-900">
-                    <div id="gallery" class="relative w-full h-full" data-carousel="slide">
-                        <!-- Carousel wrapper -->
-                        <div class="relative overflow-hidden rounded-lg h-full">
-                            <!-- Item 1 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-                                    class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="">
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-                                    class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="">
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                                    class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="">
-                            </div>
-                            <!-- Item 4 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                                    class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="">
-                            </div>
-                            <!-- Item 5 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-                                    class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                    alt="">
-                            </div>
-                        </div>
-                        <!-- Slider controls -->
-                        <button type="button"
-                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-prev>
-                            <span
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M5 1 1 5l4 4" />
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                        <button type="button"
-                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-next>
-                            <span
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 9 4-4-4-4" />
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
+        
+            <!-- Карточка 2 -->
+            <div class="col-span-12 row-span-1 md:col-span-6 md:row-span-3 md:col-start-1 md:row-start-4 p-8 bg-[#1D2C49] rounded-xl  flex flex-col md:flex-row">
+                <div class="flex-grow space-y-12">
+                    <div class="space-y-2">
+                        <h2 class="text-lg text-[#F2F5FA] font-bold mb-4">Брошюра</h2>
+                    <p class="mb-4 w-3/4 text-[#F2F5FA]">odio In sollicitudin. elit. nec sodales. non. sollicitudin. at risus Quisque risus eget tempor hendrerit tincidunt libero, dignissim, sodales. orci quis ex ac</p>
                     </div>
+                    <button class="bg-[#F2F5FA] text-[#1D2C49] py-2 px-4 rounded-full">Скачать брошюру</button>
                 </div>
+                <div class="flex-none w-full md:w-56 h-56 ml-4 mt-4 md:mt-0 rounded-lg">
+                    <img src="./img/brouchure.png" alt="Описание изображения" class="w-full h-full object-cover rounded-lg">
+                </div>            
             </div>
-
-            <section class="block lg:hidden w-full px-0">
-                <div class="carousel max-w-full p-0 space-x-2 object-cover">
-                    <div class="w-full carousel-item aspect-square">
-                        <img src="./img/homeland_banner.jpg"
-                            class="w-full rounded-box" />
+        
+            <!-- Карточка 3 -->
+            <div class="col-span-12 md:col-span-6 md:row-span-6 md:col-start-7 md:row-start-1 rounded-xl">
+                <div class="swiper mySwiper w-full px-4 md:px-0">
+                    <div class="swiper-wrapper space-x-2 rounded-xl">
+                        <!-- Слайд 1 -->
+                        <div class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-xl  bg-red-500 relative">
+                            <img src="./img/homeland_banner.jpg" alt="Слайд 1" class="object-cover w-full h-full rounded-lg ">
+                            <button class="absolute bottom-4 left-4 bg-[#F2F5FA] text-[#1D2C49] py-2 px-4 rounded-full">Просмотреть</button>
+                        </div>
+                        <!-- Слайд 2 -->
+                        <div class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-xl  bg-blue-500 relative">
+                            <img src="./img/prime_garden2_banner.jpg" alt="Слайд 2" class="object-cover w-full h-full rounded-lg ">
+                            <button class="absolute bottom-4 left-4 bg-[#F2F5FA] text-[#1D2C49] py-2 px-4 rounded-full">Просмотреть</button>
+                        </div>
+                        <!-- Слайд 3 -->
+                        <div class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-xl  bg-green-500 relative">
+                            <img src="./img/tengri_banner.webp" alt="Слайд 3" class="object-cover w-full h-full rounded-lg ">
+                            <button class="absolute bottom-4 left-4 bg-[#F2F5FA] text-[#1D2C49] py-2 px-4 rounded-full">Просмотреть</button>
+                        </div>
+                        <!-- Добавьте больше слайдов по аналогии -->
                     </div>
-                    <div class="w-full carousel-item aspect-square">
-                        <img src="./img/prime_garden2_banner.jpg"
-                            class="w-full rounded-box" />
-                    </div>
-                    <div class="w-full carousel-item aspect-square">
-                        <img src="./img/tengri_banner.webp"
-                            class="w-full rounded-box" />
-                    </div>
+                    <!-- Стандартные кнопки для навигации Swiper -->
+                    <div class="swiper-button-prev hidden lg:block"></div>
+                    <div class="swiper-button-next hidden lg:block"></div>
+                    <!-- Пагинация -->
+                    <div class="swiper-pagination hidden"></div>
                 </div>
-            </section>
+            </div>        
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var mySwiper = new Swiper('.mySwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 15000, // Задержка в 15 секунд
+                    disableOnInteraction: false, // Продолжать автопроигрывание после взаимодействия пользователя
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+
+
+    </script>
+
 
     <!--Features-->
     <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
@@ -243,70 +207,107 @@
     <!--Masorny-->
     <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div class="grid col-span-1 lg:col-span-8">
-                <div class="grid grid-cols-1 lg:grid-cols-8 gap-8">
-                    <div class="grid col-span-1 lg:col-span-5">
-                        <div class="card w-full image-full">
-                            <figure><img src="./img/about1.png"
-                                    alt="Shoes" /></figure>
-                            <!-- <div class="card-body">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                            </div> -->
+            <!-- Левая колонка -->
+            <div class="col-span-1 lg:col-span-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8 h-full">
+                    <!-- Большая карточка -->
+                    <div class="md:col-span-2 lg:col-span-5 flex">
+                        <div class="card w-full image-full px-4">
+                            <figure><img src="./img/about1.png" alt="Shoes" class="w-full" /></figure>
                         </div>
                     </div>
-                    <div class="grid col-span-1 lg:col-span-3">
-                        <div class="card w-full bg-red-100">
-                            <figure class="px-4 pt-4">
-                                <img src="./img/about2.png"
-                                    alt="Shoes" class="rounded-xl" />
+                    <!-- Маленькие карточки -->
+                    <div class="md:col-span-1 lg:col-span-3 flex">
+                        <div class="card w-full bg-[#F2F5FA] px-4">
+                            <figure class="pt-4">
+                                <img src="./img/about2.png" alt="Shoes" class="w-full rounded-xl" />
                             </figure>
-                            <div class="card-body pt-4 items-start text-left">
+                            <div class="card-body pt-4 items-start text-left px-4">
                                 <h2 class="card-title">На рынке</h2>
                                 <p>19 лет</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="grid col-span-1 lg:col-span-3">
-                        <div class="card w-full bg-red-100">
-                            <figure class="px-4 pt-4">
-                                <img src="./img/about3.png"
-                                    alt="Shoes" class="rounded-xl" />
+                    <div class="md:col-span-1 lg:col-span-3 flex">
+                        <div class="card w-full bg-[#F2F5FA] px-4">
+                            <figure class="pt-4">
+                                <img src="./img/about3.png" alt="Shoes" class="w-full rounded-xl" />
                             </figure>
-                            <div class="card-body pt-4 items-start text-left">
+                            <div class="card-body pt-4 items-start text-left px-4">
                                 <h2 class="card-title">На рынке</h2>
                                 <p>19 лет</p>
                             </div>
                         </div>
                     </div>
-                    <div class="grid col-span-1 lg:col-span-5">
-                        <div class="card w-full image-full">
-                            <figure><img src="./img/about1.png"
-                                    alt="Shoes" /></figure>
-                            <!-- <div class="card-body">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                            </div> -->
+                    <!-- Вторая большая карточка -->
+                    <div class="md:col-span-2 lg:col-span-5 flex">
+                        <div class="card w-full image-full px-4">
+                            <figure><img src="./img/about1.png" alt="Shoes" class="w-full" /></figure>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="grid col-span-1 lg:col-span-4">
-                <div class="card w-full bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                        <img src="./img/about5.png"" alt="Shoes"
-                            class="rounded-xl" />
+    
+            <!-- Правая колонка -->
+            <div class="md:col-span-1 lg:col-span-4 flex">
+                <div class="card w-full bg-[#F2F5FA] shadow-xl px-8">
+                    <figure class="pt-10">
+                        <img src="./img/about5.png" alt="Shoes" class="w-full rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-body pt-8 px-0 items-start text-left">
+                        <h2 class="card-title">8000+</h2>
+                        <p>Семей живут в наших ЖК</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+     <!--YouTube Videos-->
+     <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 space-y-8 py-20">
+        <!-- Div с заголовком и описанием -->
+        <div class="text-left mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">YouTube видео</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl">placerat. at, ac placerat quis efficitur. non. facilisis
+                sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel tempor dui sodales. dolor non </p>
+        </div>
+        <div class="swiper mySwiper w-full">
+            <div class="swiper-wrapper space-x-2 lg:space-x-0">
+                <!-- Слайд 1 с видео YouTube -->
+                <div
+                    class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-lg">
+                    <iframe class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/10IUpFN2iw8?si=5GlK9DY180Jh7M8j"" frameborder=" 0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- Слайд 2 с видео YouTube -->
+                <div
+                    class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-lg">
+                    <iframe class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/10IUpFN2iw8?si=5GlK9DY180Jh7M8j"" frameborder=" 0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- Слайд 3 с видео YouTube -->
+                <div
+                    class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-lg">
+                    <iframe class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/10IUpFN2iw8?si=5GlK9DY180Jh7M8j"" frameborder=" 0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- Добавьте больше слайдов по аналогии -->
+            </div>
+            <!-- Стандартные кнопки для навигации Swiper -->
+            <div class="swiper-button-prev hidden lg:block"></div>
+            <div class="swiper-button-next hidden lg:block"></div>
+            <!-- Пагинация -->
+            <div class="swiper-pagination hidden"></div>
+        </div>
+    </section>
+    
 
     <!--Gallery-->
     <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-20">
@@ -424,102 +425,46 @@
     </section>
 
      <!--YouTube Videos-->
-    <!--Desktop-->
-    <section class="mx-auto max-w-screen-2xl  px-4 sm:px-6 lg:px-8 space-y-8 py-20 hidden lg:block">
-        <div class="space-y-4">
-            <h1 class="text-2xl font-semibold text-[#1D2C49] md:text-4xl">YouTube видео</h1>
-            <p class="text-sm font-medium text-[#8C94A8] md:text-sm max-w-screen-sm">placerat. at, ac placerat quis efficitur. non. facilisis sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel tempor dui sodales. dolor non .</p>
+     <section class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 space-y-8 py-20">
+        <!-- Div с заголовком и описанием -->
+        <div class="text-left mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">YouTube видео</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl">placerat. at, ac placerat quis efficitur. non. facilisis
+                sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel tempor dui sodales. dolor non </p>
         </div>
-        <div id="animation-carousel" class="relative w-full" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div class="relative overflow-hidden rounded-lg h-[600px]">
-                 <!-- Item 1 -->
-                  <div class="rounded-xl w-full h-full aspect-video hidden duration-200 ease-linear" controls data-carousel-item>
-                    <iframe
-                      class="w-full h-full rounded-xl"
-                      src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen>
-                    </iframe>
-                  </div>
-                <!-- Item 2 -->
-                <div class="rounded-xl w-full h-full aspect-video hidden duration-200 ease-linear" controls data-carousel-item>
-                    <iframe
-                      class="w-full h-full rounded-xl"
-                      src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen>
-                    </iframe>
-                  </div>
-                <!-- Item 3 -->
-                <div class="rounded-xl w-full h-full aspect-video hidden duration-200 ease-linear" controls data-carousel-item>
-                    <iframe
-                      class="w-full h-full rounded-xl"
-                      src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen>
-                    </iframe>
-                  </div>
-            </div>
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
-    </section>
-
-    <!--Mobile-->
-    <section class="block lg:hidden w-screen px-4 space-y-8 py-20">
-        <div class="space-y-4">
-            <h1 class="text-3xl font-semibold text-[#1D2C49]">YouTube видео</h1>
-            <p class="text-base font-medium text-[#8C94A8] max-w-screen-sm">placerat. at, ac placerat
-                quis efficitur. non. facilisis sollicitudin. lorem. nisi varius ullamcorper convallis. dui lacus vel
-                tempor dui sodales. dolor non .</p>
-        </div>
-        <div class="carousel max-w-full p-0 space-x-2 object-cover">
-            <div class="w-full carousel-item">
-                <div class="rounded-xl w-full h-full">
-                    <iframe class="w-full h-full rounded-xl aspect-square" src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                        frameborder="0"
+        <div class="swiper mySwiper w-full">
+            <div class="swiper-wrapper space-x-2 lg:space-x-0">
+                <!-- Слайд 1 с видео YouTube -->
+                <div
+                    class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-lg">
+                    <iframe class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/10IUpFN2iw8?si=5GlK9DY180Jh7M8j"" frameborder=" 0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                        allowfullscreen></iframe>
                 </div>
-            </div>
-            <div class="w-full carousel-item">
-                <div class="rounded-xl w-full h-full">
-                    <iframe class="w-full h-full rounded-xl aspect-square" src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                        frameborder="0"
+                <!-- Слайд 2 с видео YouTube -->
+                <div
+                    class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-lg">
+                    <iframe class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/10IUpFN2iw8?si=5GlK9DY180Jh7M8j"" frameborder=" 0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                        allowfullscreen></iframe>
                 </div>
-            </div>
-            <div class="w-full carousel-item">
-                <div class="rounded-xl w-full h-full">
-                    <iframe class="w-full h-full rounded-xl aspect-square" src="https://www.youtube.com/embed/FF3fuYLnApQ"
-                        frameborder="0"
+                <!-- Слайд 3 с видео YouTube -->
+                <div
+                    class="swiper-slide flex items-center justify-center md:h-64 h-[300px] lg:h-[600px] md:w-auto w-full rounded-lg">
+                    <iframe class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/10IUpFN2iw8?si=5GlK9DY180Jh7M8j"" frameborder=" 0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                        allowfullscreen></iframe>
                 </div>
+                <!-- Добавьте больше слайдов по аналогии -->
             </div>
+            <!-- Стандартные кнопки для навигации Swiper -->
+            <div class="swiper-button-prev hidden lg:block"></div>
+            <div class="swiper-button-next hidden lg:block"></div>
+            <!-- Пагинация -->
+            <div class="swiper-pagination hidden"></div>
         </div>
     </section>
 
